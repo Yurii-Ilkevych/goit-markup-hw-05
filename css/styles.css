@@ -127,7 +127,10 @@ border-radius: 2px;
 
 }
 
-
+.nav-line-studio,
+.nav-line-portfolio {
+    color: #404BBF;
+}
 
 
 
@@ -760,10 +763,6 @@ margin-bottom: 16px;
     height: 40px;
     margin-right: 16px;
 
- transition-property:border-radius, background-color;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .icon-footer .list:nth-child(4) {
@@ -774,11 +773,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: block;
     width: 40px;
     height: 40px;
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-footer .list:hover,
+.icon-footer .link:hover,
 .icon-footer .link:focus {
-    border-radius: 50%;
     background-color: #31D0AA;
 }
 
